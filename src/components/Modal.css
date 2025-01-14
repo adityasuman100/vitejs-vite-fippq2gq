@@ -1,0 +1,84 @@
+/* Modal Backdrop */
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    max-width: 90%;
+    padding: 20px;
+    animation: fadeIn 0.3s ease-out;
+    position: relative;
+}
+
+/* Modal Header */
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Modal Title */
+.modal-header h2 {
+    margin: 0;
+}
+
+/* Modal Close Button */
+.modal-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #888;
+}
+
+/* Modal Body */
+.modal-body {
+    margin-bottom: 20px;
+}
+
+/* Modal Footer */
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Modal Action Button */
+.modal-action {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal-action:hover {
+    background-color: #0056b3;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* #imp -> This property is often used in animations, like sliding an element into view */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
