@@ -4,6 +4,16 @@ import PropTypes from 'prop-types';
 import './Popover.css';
 
 const Popover = ({ content, children, position = 'top', trigger = 'click' }) => {
+
+    // <div style={{ marginTop: '20px' }}>
+    //             <Popover
+    //                 content="Hovered Popover"
+    //                 position="right"
+    //                 trigger="hover"
+    //             >
+    //                 <button>Hover Over Me</button>
+    //             </Popover>
+    //         </div>
     const [isVisible, setIsVisible] = useState(false);
     const popoverRef = useRef(null);
 
