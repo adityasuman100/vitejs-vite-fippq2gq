@@ -1,0 +1,38 @@
+.autocomplete {
+    position: relative;
+    width: 300px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.suggestions {
+    border: 1px solid #ddd;
+    border-top: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+}
+
+.suggestions li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestions li.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.highlight {
+    font-weight: bold;
+}
