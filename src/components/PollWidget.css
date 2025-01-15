@@ -1,0 +1,36 @@
+.poll-widget {
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+.poll-options {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.poll-option {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.poll-option:hover {
+    background-color: #f0f0f0;
+}
+
+.poll-option.selected {
+    background-color: #007bff;
+    color: white;
+}
+
+.poll-result {
+    font-size: 12px;
+    text-align: right;
+}
